@@ -1,0 +1,14 @@
+[Unit]
+Description=Streamlit Pneumonia Frontend
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/RSNAPipeline_AWS
+Environment="PATH=/home/ubuntu/venv/bin"
+ExecStart=/home/ubuntu/venv/bin/streamlit run frontend/frontend.py --server.port 8501
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
