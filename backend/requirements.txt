@@ -1,0 +1,16 @@
+# --- Frontend ---
+streamlit
+requests
+
+# --- Backend API ---
+fastapi
+uvicorn
+python-multipart
+
+# --- Machine Learning & Vision ---
+torch
+torchvision
+transformers
+pillow
+numpy
+pandas
